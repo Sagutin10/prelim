@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>klook</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script>
+      document.addEventListener( 'DOMContentLoaded', function () {
+        var main = new Splide( '#main-carousel', {
+          type      : 'fade',
+          rewind    : true,
+          pagination: false,
+          arrows    : false,
+        } );
+      
+        var thumbnails = new Splide( '#thumbnail-carousel', {
+          fixedWidth  : 100,
+          fixedHeight : 60,
+          gap         : 10,
+          rewind      : true,
+          pagination  : false,
+          isNavigation: true,
+          breakpoints : {
+            600: {
+              fixedWidth : 60,
+              fixedHeight: 44,
+            },
+          },
+        } );
+      
+        main.sync( thumbnails );
+        main.mount();
+        thumbnails.mount();
+      });
+          </script>
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/kl.png" alt="Tourist Spot Logo"></a>
+        </div>
+        <nav>
+            <ul id="menulist">
+                <li class="active"><a href="#home">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+<br>
+<div class="cent">
+    <img src="././assets/images/bb.jpg" class="img-fluid" alt="Responsive image" style="width: 100%;">
+    </div>
+<br>
+<br>
+
+    <center>
+        <div class="container">
+            <h3 class="up">T O U R I S T &nbsp S P O T</h3>
+            <br>
+            <div id="main-carousel" class="splide">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    <img src="././assets/images/4.jpg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="././assets/images/5.jpg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="././assets/images/6.jpg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="././assets/images/7.jpg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="././assets/images/8.jpg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="././assets/images/9.jpg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="././assets/images/11jpg.jpg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="././assets/images/22.jpg" alt="">
+                  </li>
+                  
+                  
+                </ul>
+              </div>
+            </div>
+            <!-- <button class="button"><span></span> <a href = "gallery.html"> VISIT US</button> -->
+          <section
+                id="thumbnail-carousel"
+                class="splide"
+                aria-label="The carousel with thumbnails. Selecting a thumbnail will change the Beautiful Gallery carousel."
+              >
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide">
+                        <img src="././assets/images/4.jpg" alt="">
+                      </li>
+                      <li class="splide__slide">
+                        <img src="././assets/images/5.jpg" alt="">
+                      </li>
+                      <li class="splide__slide">
+                        <img src="././assets/images/6.jpg" alt="">
+                      </li>
+                      <li class="splide__slide">
+                        <img src="././assets/images/7.jpg" alt="">
+                      </li>
+                      <li class="splide__slide">
+                        <img src="././assets/images/8.jpg" alt="">
+                      </li>
+                      <li class="splide__slide">
+                        <img src="././assets/images/9.jpg" alt="">
+                      </li>
+                      <li class="splide__slide">
+                        <img src="././assets/images/11jpg.jpg" alt="">
+                      </li>
+                      <li class="splide__slide">
+                        <img src="././assets/images/22.jpg" alt="">
+                      </li>
+      
+                    
+                  </ul>
+                </div>
+      </section>
+      </div>
+    </center>
+
+   
+    <footer>
+      <div class="footer-content">
+        <div class="footer-left">
+          <div class="logo">
+            <a href="index.html"><img src="images/kl.png" alt="Tourist Spot Logo"></a>
+        </div>
+          <p>Empowering Innovation, Inspiring Excellence: Together, We Achieve Greatness..</p>
+        </div>
+        <div class="footer-right">
+          <h3>Contact Information</h3>
+          <p>Email: ajongam@gmail.com</p>
+          <p>Phone: +1 (123) 456-7890</p>
+          <p>Address: Purok 5, Tangnan, Panglao, Zip</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 klook. All rights reserved.</p>
+      </div>
+    </footer>
+    
+
+    
+    </script>
+    
+</body>
+</html>
